@@ -11,7 +11,7 @@ Now start introducing 2 classes
 
 
 objectsqlite3 class
-'''
+```
  void Open(const std::string& filename);//open database
 	bool CheckOpen();
 	bool Exec(const std::string& Sql, sqlite3_callback call);//Execute Sql statement
@@ -19,18 +19,18 @@ objectsqlite3 class
 	bool DelectTable(const std::string& TableName);// delete table
 	bool CreateTable(const std::string& TableName,const CreateTableFieldInfoA& Fieldinfo); //create Table
 	FieldData GetAllTable(); // Get all tables in the currently open database
-'''
+```
 ObjectSqlite3Table class
 
-'''
+```
 //Editing is under development
  bool ChekcOpen(); //chekco open Table
 	FieldData Select(const std::string& FieldName); //read data
 	bool Insert(WriteFieldData& Data);//write data
 
-'''
+```
 Then open a database and table?
-'''
+```
 
 objectsqlite3 db;
 
@@ -42,4 +42,4 @@ ObjectSqlite3Table user(&db,"user) // open user table
 
 }
 
-'''
+```
